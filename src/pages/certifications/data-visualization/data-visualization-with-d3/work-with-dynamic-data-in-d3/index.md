@@ -2,9 +2,16 @@
 title: Work with Dynamic Data in D3
 ---
 ## Work with Dynamic Data in D3
+---
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/data-visualization/data-visualization-with-d3/work-with-dynamic-data-in-d3/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+In this lesson you're going to be using the value of the element in the array
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
+```    d3.select("body").selectAll("h2")
+      .data(dataset)
+      .enter()
+      .append("h2")
+      .text((d) => (d + " USD"))
+      ```
+      this way you are changing the text for each element 
 
 <!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
